@@ -42,4 +42,4 @@ for f in glob.glob(os.path.join(new_data_path, '*json')):
         shutil.copyfile(r['f'], os.path.join(b_path, os.path.basename(r['f'])))
     new_name = r['i'] + '_' + initials + os.path.basename(f)
     print(new_name)
-    #shutil.copyfile(f, os.path.join(data_path, new_name))
+    shutil.copyfile(f, os.path.join(data_path, new_name))
