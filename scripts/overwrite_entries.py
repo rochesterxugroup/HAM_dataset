@@ -26,6 +26,9 @@ for f in glob.glob(os.path.join(data_path, '*json')):
     smiles = data['smiles']
     if smiles not in existing:
         existing[smiles] = []
+    else:
+        other = existing[smiles][0]['f']
+        raise ValueError(f'Found multiples smiles in your id range: {f} and {other}')
     existing[smiles].append({'i': rs[0], 'f': f})
 
 for f in glob.glob(os.path.join(new_data_path, '*json')):
