@@ -35,11 +35,16 @@ for f in glob.glob(os.path.join(new_data_path, '*json')):
     with open(f) as jf:
         data = json.load(jf)
     smiles = data['smiles']
-    records = existing[smiles]
+    try:
+        records = existing[smiles]
+    except KeyError:
+        print(f'Skipping {f} because not in range')
+        continue
     print('Will backup following records:')
     for r in records:
         print(r)
         shutil.copyfile(r['f'], os.path.join(b_path, os.path.basename(r['f'])))
+        os.remove(r['f'])
     new_name = r['i'] + '_' + initials + os.path.basename(f)
     print(new_name)
     shutil.copyfile(f, os.path.join(data_path, new_name))
