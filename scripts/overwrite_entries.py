@@ -31,16 +31,21 @@ for f in glob.glob(os.path.join(data_path, '*json')):
         raise ValueError(f'Found multiples smiles in your id range: {f} and {other}')
     existing[smiles].append({'i': rs[0], 'f': f})
 
+previously_considered = dict()
 for f in glob.glob(os.path.join(new_data_path, '*json')):
     with open(f) as jf:
         data = json.load(jf)
     smiles = data['smiles']
+    if smiles in previously_considered:
+        raise ValueError(f'You have multiple files for smiles {smiles}: {f} and {previously_considered[smiles]}')
+    else:
+        previously_considered[smiles] = f
     try:
         records = existing[smiles]
     except KeyError:
         print(f'Skipping {f} because not in range')
         continue
-    print('Will backup following records:')
+    print(f'Will backup following records for smiles {smiles}:')
     for r in records:
         print(r)
         shutil.copyfile(r['f'], os.path.join(b_path, os.path.basename(r['f'])))
