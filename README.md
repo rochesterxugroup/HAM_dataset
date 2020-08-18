@@ -34,7 +34,7 @@ We use store a molecular graph structure and its mapping in JSON format. Here is
                "target":1   # to fg_id
                "bondtype": 1.0  # bond type (1.0, 1.5, 2.0, 3.0)
               },
-							{...}
+              {...}
            ],
 	"smiles": "C[SiH](C)O[Si](C)(CCl)F"
 }
