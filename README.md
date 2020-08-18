@@ -13,6 +13,35 @@ Images of the generated mapping are given in the [figures](https://github.com/ro
 
 
 
+## JSON Format
+
+We use store a molecular graph structure and its mapping in JSON format. Here is an example (some content is omited):
+
+```json
+{
+  "cgnodes": [[0,1,2], [3,4,5]],  # [[fg_id...], [fg_id...]],
+  "nodes": [
+              {
+                "cg":2,  # cg group_id (starts with 0)
+                "element":"C",  # atom type
+                "id":0  # fg id 
+              },
+              {...}
+           ],
+  "edges": [
+              {
+               "source":0,  # from fg_id
+               "target":1   # to fg_id
+               "bondtype": 1.0  # bond type (1.0, 1.5, 2.0, 3.0)
+              },
+							{...}
+           ],
+	"smiles": "C[SiH](C)O[Si](C)(CCl)F"
+}
+```
+
+
+
 ## Deep Supervised Graph Partitioning Model
 
 Based on *HAM* dataset, we propose *Deep Supervised Graph Partitioning Model (DSGPM)* (see citation below) for predicting CG mappings of unseen molecular graphs. The code of *DSGPM* can be seen here: https://github.com/rochesterxugroup/DSGPM .
