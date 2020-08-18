@@ -5,4 +5,4 @@ This dataset contains CG mappings of 1206 organic molecules with less than 25 he
 
 
 ### Figures ###
-Images of the generated mapping are given in the [figures](). These images were generated using [RDKit](https://www.rdkit.org/) software.
+Images of the generated mapping are given in the [figures](https://github.com/rochesterxugroup/HAM_dataset/tree/master/figures). These images were generated using [RDKit](https://www.rdkit.org/) software.
