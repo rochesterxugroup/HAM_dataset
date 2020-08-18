@@ -15,7 +15,7 @@ Images of the generated mapping are given in the [figures](https://github.com/ro
 
 ## JSON Format
 
-We use store a molecular graph structure and its mapping in JSON format. Here is an example (some content is omited):
+We store a molecular graph structure and its mapping in JSON format. Here is an example (some content is omited):
 
 ```
 {
