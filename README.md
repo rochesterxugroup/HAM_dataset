@@ -13,7 +13,15 @@ Images of the generated mapping are given in the [figures](https://github.com/ro
 
 
 
+## Deep Supervised Graph Partitioning Model
+
+Based on *HAM* dataset, we propose *Deep Supervised Graph Partitioning Model (DSGPM)* (see citation below) for predicting CG mappings of unseen molecular graphs. The code of *DSGPM* can be seen here: https://github.com/rochesterxugroup/DSGPM .
+
+
+
 ## Reference
+
+Please cite our paper if you use our dataset:
 
 ```
 @article{li_2020_chem_sci,
