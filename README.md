@@ -17,7 +17,7 @@ Images of the generated mapping are given in the [figures](https://github.com/ro
 
 We use store a molecular graph structure and its mapping in JSON format. Here is an example (some content is omited):
 
-```json
+```
 {
   "cgnodes": [[0,1,2], [3,4,5]],  # [[fg_id...], [fg_id...]],
   "nodes": [
