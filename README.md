@@ -36,7 +36,7 @@ We store a molecular graph structure and its mapping in JSON format. Here is an 
               },
               {...}
            ],
-	"smiles": "C[SiH](C)O[Si](C)(CCl)F"
+	"smiles": "C[Si](C)O[Si](C)(CCl)F"
 }
 ```
 
