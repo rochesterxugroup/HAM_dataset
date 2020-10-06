@@ -1,4 +1,4 @@
-
+CC1=CC(=C(C=C1)OC2=NC=CC(=C2)/C(=N/O)/N)OC
      RDKit          3D
 
  20 21  0  0  0  0  0  0  0  0999 V2000

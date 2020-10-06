@@ -1,4 +1,4 @@
-
+CC([NH2+]CCC[NH3+])C1(N)CCC([NH3+])C1N
      RDKit          3D
 
  15 15  0  0  0  0  0  0  0  0999 V2000

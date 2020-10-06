@@ -1,4 +1,4 @@
-
+CC1=CC(=C(C=C1)NC(=O)C)OC2=CC3=C(CCC(=O)N3)C=C2
      RDKit          3D
 
  23 25  0  0  0  0  0  0  0  0999 V2000

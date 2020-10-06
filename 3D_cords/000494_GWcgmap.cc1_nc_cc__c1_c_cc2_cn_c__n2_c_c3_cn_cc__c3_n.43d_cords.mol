@@ -1,4 +1,4 @@
-
+CC1=NC=CC(=C1)C#CC2=CN(C(=N2)C)C3=CN=CC(=C3)N
      RDKit          3D
 
  22 24  0  0  0  0  0  0  0  0999 V2000
